@@ -239,7 +239,6 @@
     </div>
 </div>
 <div id="tF4tab" class="container">
-
     <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
     <div class="row">
         <div class="col-lg-12">
@@ -266,13 +265,10 @@
                         <td><?= $row["Procedures_Included"] ?></td>
                         <td><?= $row["Comments"] ?></td>
                         <td><?= $row["Trainer"] ?></td>
-
-
                     </tr>
                 <?php
                         }
                 ?>
-
                 </tr>
                 </thead>
                 <tbody>
@@ -299,35 +295,43 @@
                         <th scope="col">Comments</th>
                         <th scope="col">Trainer</th>
 
-                        <?php
+                 
+                </tr>
+                </thead>
+                <tbody>
+                <?php
                         include 'php/conn.php';
                         $query = "SELECT * from  furoradiology_others";
                         $result = mysqli_query($conn, $query);
                         while ($row = mysqli_fetch_assoc($result)) {
                         ?>
                     <tr>
-                        <td>
-                            <?= $row["id"] ?>
-                        </td>
+                        <td> <?= $row["id"] ?></td>
                         <td><?= $row["Date"] ?></td>
                         <td><?= $row["Procedure_"] ?></td>
                         <td><?= $row["Complication"] ?></td>
                         <td><?= $row["Comments"] ?></td>
                         <td><?= $row["Trainer"] ?></td>
-
-
                     </tr>
                 <?php
                         }
                 ?>
-
-                </tr>
-                </thead>
-                <tbody>
-
                 </tbody>
                 <tfoot>
                 </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="tU1tab" class="container">
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+            <?php include 'php/fetchobj.php';
+               $table = new create_table();
+               $table->table("uabdomen");
+               ?>
             </table>
         </div>
     </div>
@@ -346,6 +350,7 @@
         $("#tF4tab").hide();
         $("#tF5tab").hide();
         $("#sub2bar").hide();
+        $("#tU1tab").hide();
 
 
         $("#t1").click(() => {
@@ -359,6 +364,7 @@
             $("#tF4tab").hide();
             $("#tF5tab").hide();
             $("#sub2bar").hide();
+            $("#tU1tab").hide();
 
         })
         $("#t2").click(() => {
@@ -372,6 +378,7 @@
             $("#tF4tab").hide();
             $("#tF5tab").hide();
             $("#sub2bar").hide();
+            $("#tU1tab").hide();
 
         })
         $("#t3").click(() => {
@@ -385,6 +392,7 @@
             $("#tF4tab").hide();
             $("#tF5tab").hide();
             $("#sub2bar").hide();
+            $("#tU1tab").hide();
 
         })
         $("#t4").click(() => {
@@ -398,6 +406,7 @@
             $("#tF4tab").hide();
             $("#tF5tab").hide();
             $("#sub2bar").hide();
+            $("#tU1tab").hide();
 
         })
         $("#tF1").click(() => {
@@ -409,6 +418,7 @@
             $("#tF3tab").hide();
             $("#tF4tab").hide();
             $("#sub2bar").hide();
+            $("#tU1tab").hide();
 
             $("#tF5tab").hide();
 
@@ -423,6 +433,7 @@
             $("#tF4tab").hide();
             $("#tF5tab").hide();
             $("#sub2bar").hide();
+            $("#tU1tab").hide();
 
         })
         $("#tF3").click(() => {
@@ -435,6 +446,7 @@
             $("#tF4tab").hide();
             $("#tF5tab").hide();
             $("#sub2bar").hide();
+            $("#tU1tab").hide();
 
         })
         $("#tF4").click(() => {
@@ -447,6 +459,7 @@
             $("#tF4tab").show();
             $("#tF5tab").hide();
             $("#sub2bar").hide();
+            $("#tU1tab").hide();
 
 
         })
@@ -458,13 +471,26 @@
             $("#tF2tab").hide();
             $("#tF3tab").hide();
             $("#tF4tab").hide();
-            $("#tF5tab").show();
             $("#sub2bar").hide();
+            $("#tF5tab").show();
+            $("#tU1tab").hide();
 
 
         })
         $("#t5").click(() => {
-            $("sub2bar").show()
+            $("#t1tab").hide();
+            $("#t2tab").hide();
+            $("#t3tab").hide();
+            $("#tF1tab").hide();
+            $("#sub1bar").hide();
+            $("#tF2tab").hide();
+            $("#tF3tab").hide();
+            $("#tF3tab").hide();
+            $("#tF4tab").hide();
+            $("#tF5tab").hide();
+            $("#sub2bar").show()
+            $("#tU1tab").show();
+
         })
 
 
