@@ -8,7 +8,7 @@
         $this->con = $conn;
     }
     public function table($Name){
-        $sql="select * from $Name";
+        $sql="select * from $Name limit 1";
         $result=mysqli_query($this->con,$sql);
         echo " <thead class=thead-dark>";
         echo "<tr>";
@@ -19,15 +19,22 @@
             }
         echo "</tr>
             </thead>";
+
             echo "<tbody>";
-            $result=mysqli_query($this->con,$sql);
-            echo "<tr>";
+            $sql="select * from $Name ";
+        $result=mysqli_query($this->con,$sql);
+            while($row=mysqli_fetch_assoc($result)){
+                echo "<tr>";   
+                foreach($row as $key=>$value) {
+                    
+                    echo "<td>" . $value . "</td>";
+                  
             
-       foreach($result->fetch_assoc() as $key=>$value) {
-            echo "<td>" . $value . "</td>";
-        
-        }
-            echo "<tr>";
+                    }
+                    echo "<tr>";
+
+            }
+       
 
         echo "</tbody>";
     }

@@ -1,5 +1,5 @@
 <div id="t1tab" class="container">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <button id="model-show" onclick="My_module('training_posts_held','')" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -295,27 +295,27 @@
                         <th scope="col">Comments</th>
                         <th scope="col">Trainer</th>
 
-                 
-                </tr>
+
+                    </tr>
                 </thead>
                 <tbody>
-                <?php
-                        include 'php/conn.php';
-                        $query = "SELECT * from  furoradiology_others";
-                        $result = mysqli_query($conn, $query);
-                        while ($row = mysqli_fetch_assoc($result)) {
-                        ?>
-                    <tr>
-                        <td> <?= $row["id"] ?></td>
-                        <td><?= $row["Date"] ?></td>
-                        <td><?= $row["Procedure_"] ?></td>
-                        <td><?= $row["Complication"] ?></td>
-                        <td><?= $row["Comments"] ?></td>
-                        <td><?= $row["Trainer"] ?></td>
-                    </tr>
-                <?php
-                        }
-                ?>
+                    <?php
+                    include 'php/conn.php';
+                    $query = "SELECT * from  furoradiology_others";
+                    $result = mysqli_query($conn, $query);
+                    while ($row = mysqli_fetch_assoc($result)) {
+                    ?>
+                        <tr>
+                            <td> <?= $row["id"] ?></td>
+                            <td><?= $row["Date"] ?></td>
+                            <td><?= $row["Procedure_"] ?></td>
+                            <td><?= $row["Complication"] ?></td>
+                            <td><?= $row["Comments"] ?></td>
+                            <td><?= $row["Trainer"] ?></td>
+                        </tr>
+                    <?php
+                    }
+                    ?>
                 </tbody>
                 <tfoot>
                 </tfoot>
@@ -328,171 +328,310 @@
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
-            <?php include 'php/fetchobj.php';
-               $table = new create_table();
-               $table->table("uabdomen");
-               ?>
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table("uabdomen");
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="tU2tab" class="container">
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table("uuroradiology");
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="tU3tab" class="container">
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table("usmall_part");
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="tU4tab" class="container">
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table("ucardiovascula");
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="tU5tab" class="container">
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table("umusculoskeletal");
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="CM1Tab" class="container">
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table("ctthoracic");
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="CM2Tab" class="container">
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table("mri_thoracic");
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="CM3Tab" class="container">
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table("ctmribrain");
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="CM4Tab" class="container">
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table("ctmrimusculoskeletal");
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="CM5Tab" class="container">
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table("ctabdomen");
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="CM6Tab" class="container">
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table("mriabdomen");
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="CM7Tab" class="container">
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table("ctmripelvis");
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="I1Tab" class="container">
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table("intvascular");
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="I2Tab" class="container">
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table("intbiopsy_drainage");
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="I3Tab" class="container">
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table("intmiscellaneous");
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="B1Tab" class="container" style="display:none">
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table("breast_mammography");
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="B2Tab" class="container">
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table(" breast_ultra_misc");
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="PA1tab" class="container" >
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table("paediatric_gast");
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="PA2tab" class="container" >
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table("paediatric_urolo");
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="PA3tab" class="container" >
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table("paediatric_ultrasound");
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="PA4tab" class="container" >
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table("paediatric_ct");
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="PA5tab" class="container" >
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table("paediatric_mri");
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="PA6tab" class="container" >
+    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <table id="" class="table table-striped table-bordered" style="width:100%;">
+                <?php require_once 'php/fetchobj.php';
+                $table = new create_table();
+                $table->table("paediatric_plain_film");
+                ?>
             </table>
         </div>
     </div>
 </div>
 <script>
-    $(document).ready(function() {
-
-        $("#t1tab").show();
-        $("#t2tab").hide();
-        $("#t3tab").hide();
-        $("#tF1tab").hide();
-        $("#sub1bar").hide();
-        $("#tF2tab").hide();
-        $("#tF3tab").hide();
-        $("#tF3tab").hide();
-        $("#tF4tab").hide();
-        $("#tF5tab").hide();
-        $("#sub2bar").hide();
-        $("#tU1tab").hide();
-
-
-        $("#t1").click(() => {
-            $("#t1tab").show();
-            $("#t2tab").hide();
-            $("#t3tab").hide()
-            $("#tF1tab").hide();
-            $("#sub1bar").hide();
-            $("#t2tab").hide();
-            $("#tF3tab").hide();
-            $("#tF4tab").hide();
-            $("#tF5tab").hide();
-            $("#sub2bar").hide();
-            $("#tU1tab").hide();
-
+    My_module=(table_name,modulname)=>{
+        $.ajax({
+            method:"POST",
+            url:"../php/moudles.php",
+            data:{tabel:table_name,moduln:modulname},
+            success:()=>{
+                
+            }
         })
-        $("#t2").click(() => {
-            $("#t2tab").show()
-            $("#t1tab").hide()
-            $("#t3tab").hide()
-            $("#tF1tab").hide();
-            $("#sub1bar").hide();
-            $("#tF2tab").hide();
-            $("#tF3tab").hide();
-            $("#tF4tab").hide();
-            $("#tF5tab").hide();
-            $("#sub2bar").hide();
-            $("#tU1tab").hide();
+    }
 
-        })
-        $("#t3").click(() => {
-            $("#t2tab").hide()
-            $("#t1tab").hide()
-            $("#t3tab").show()
-            $("#tF1tab").hide();
-            $("#sub1bar").hide();
-            $("#tF2tab").hide();
-            $("#tF3tab").hide();
-            $("#tF4tab").hide();
-            $("#tF5tab").hide();
-            $("#sub2bar").hide();
-            $("#tU1tab").hide();
-
-        })
-        $("#t4").click(() => {
-            $("#t2tab").hide()
-            $("#t1tab").hide()
-            $("#t3tab").hide()
-            $("#sub1bar").show();
-            $("#tF1tab").show();
-            $("#tF2tab").hide();
-            $("#tF3tab").hide();
-            $("#tF4tab").hide();
-            $("#tF5tab").hide();
-            $("#sub2bar").hide();
-            $("#tU1tab").hide();
-
-        })
-        $("#tF1").click(() => {
-            $("#t2tab").hide()
-            $("#t1tab").hide()
-            $("#t3tab").hide()
-            $("#tF1tab").show();
-            $("#tF2tab").hide();
-            $("#tF3tab").hide();
-            $("#tF4tab").hide();
-            $("#sub2bar").hide();
-            $("#tU1tab").hide();
-
-            $("#tF5tab").hide();
-
-        })
-        $("#tF2").click(() => {
-            $("#t2tab").hide()
-            $("#t1tab").hide()
-            $("#t3tab").hide()
-            $("#tF1tab").hide();
-            $("#tF2tab").show();
-            $("#tF3tab").hide();
-            $("#tF4tab").hide();
-            $("#tF5tab").hide();
-            $("#sub2bar").hide();
-            $("#tU1tab").hide();
-
-        })
-        $("#tF3").click(() => {
-            $("#t2tab").hide()
-            $("#t1tab").hide()
-            $("#t3tab").hide()
-            $("#tF1tab").hide();
-            $("#tF2tab").hide();
-            $("#tF3tab").show();
-            $("#tF4tab").hide();
-            $("#tF5tab").hide();
-            $("#sub2bar").hide();
-            $("#tU1tab").hide();
-
-        })
-        $("#tF4").click(() => {
-            $("#t2tab").hide()
-            $("#t1tab").hide()
-            $("#t3tab").hide()
-            $("#tF1tab").hide();
-            $("#tF2tab").hide();
-            $("#tF3tab").hide();
-            $("#tF4tab").show();
-            $("#tF5tab").hide();
-            $("#sub2bar").hide();
-            $("#tU1tab").hide();
-
-
-        })
-        $("#tF5").click(() => {
-            $("#t2tab").hide()
-            $("#t1tab").hide()
-            $("#t3tab").hide()
-            $("#tF1tab").hide();
-            $("#tF2tab").hide();
-            $("#tF3tab").hide();
-            $("#tF4tab").hide();
-            $("#sub2bar").hide();
-            $("#tF5tab").show();
-            $("#tU1tab").hide();
-
-
-        })
-        $("#t5").click(() => {
-            $("#t1tab").hide();
-            $("#t2tab").hide();
-            $("#t3tab").hide();
-            $("#tF1tab").hide();
-            $("#sub1bar").hide();
-            $("#tF2tab").hide();
-            $("#tF3tab").hide();
-            $("#tF3tab").hide();
-            $("#tF4tab").hide();
-            $("#tF5tab").hide();
-            $("#sub2bar").show()
-            $("#tU1tab").show();
-
-        })
-
-
-    })
 </script>
