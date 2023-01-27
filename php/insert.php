@@ -21,4 +21,11 @@ if (isset($_POST['ASA'])) {
     $insert->insert('classification', $data);
     header('location:../Anistezia.php');
 }
+if(isset($_POST["TableName"])){
+    $tableName=$_POST["TableName"];
+    unset($_POST["TableName"]);
+    $insert->insert($tableName, $_POST);
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
+
+}
 

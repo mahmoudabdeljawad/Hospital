@@ -524,7 +524,7 @@ $(document).ready(() => {
 			$('#exampleModal').modal('show');
 		});
 	})
-	
+	 
 	$("#t1tab").show();
 	$("#t2tab").hide();
 	$("#t3tab").hide();
@@ -2066,5 +2066,6 @@ $(document).ready(() => {
 		$("#PA5tab").hide();
 		$("#PA6tab").show();
 	})
+	
 })
 

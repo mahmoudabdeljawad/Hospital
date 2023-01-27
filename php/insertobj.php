@@ -12,7 +12,7 @@
       {  
            $string = "INSERT INTO ".$table_name." (";            
            $string .= implode(",", array_keys($data)) . ') VALUES (';            
-           $string .= "'" . implode("','", array_values($data)) . "')";  
+           $string .= "'" . implode("','", array_values($data)) . "')";
            if(mysqli_query($this->conn, $string))  
            {  
                 return true;  

@@ -19,7 +19,7 @@
         <div class="btn_main">
           <div class="contact_bt"><a href="Anistezia.php">Anistezia </a></div>
           <div class="contact_bt"><a href="Radiology.php">Radiology </a></div>
-          <div class="contact_bt"><a href="#">Anistezia </a></div>
+          <div class="contact_bt"><a href="LogBook.php">Log Book </a></div>
         </div>
       </div>
     </div>

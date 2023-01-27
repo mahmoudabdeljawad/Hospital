@@ -1,5 +1,5 @@
 <div id="t1tab" class="container">
-    <button  onclick="My_module('training_posts_held','')" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <button  onclick="My_module('training_posts_held')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -25,7 +25,8 @@
     </div>
 </div>
 <div id="t2tab" class="container">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('educational_and_academic_activities')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
+
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -68,7 +69,7 @@
     </div>
 </div>
 <div id="t3tab" class="container">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('plain_film_reporting')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -107,7 +108,7 @@
     </div>
 </div>
 <div id="tF1tab" class="container">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('fbarium_enema')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -148,7 +149,7 @@
     </div>
 </div>
 <div id="tF2tab" class="container">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('fbarium_swallow_meal')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -194,7 +195,7 @@
 </div>
 <div id="tF3tab" class="container">
 
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('fsmall_bowel_studies')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -239,7 +240,7 @@
     </div>
 </div>
 <div id="tF4tab" class="container">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('uabdomen')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -282,7 +283,7 @@
 </div>
 <div id="tF5tab" class="container">
 
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('furoradiology_others')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -324,7 +325,7 @@
     </div>
 </div>
 <div id="tU1tab" class="container">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('uabdomen')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -337,7 +338,7 @@
     </div>
 </div>
 <div id="tU2tab" class="container">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('uuroradiology')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -350,7 +351,7 @@
     </div>
 </div>
 <div id="tU3tab" class="container">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('usmall_part')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -363,7 +364,7 @@
     </div>
 </div>
 <div id="tU4tab" class="container">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('ucardiovascula')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -376,7 +377,7 @@
     </div>
 </div>
 <div id="tU5tab" class="container">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('educational_and_academic_activities')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -389,7 +390,7 @@
     </div>
 </div>
 <div id="CM1Tab" class="container">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('ctthoracic')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -402,7 +403,7 @@
     </div>
 </div>
 <div id="CM2Tab" class="container">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('mri_thoracic')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -415,7 +416,7 @@
     </div>
 </div>
 <div id="CM3Tab" class="container">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('ctmribrain')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -428,7 +429,7 @@
     </div>
 </div>
 <div id="CM4Tab" class="container">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('ctmrimusculoskeletal')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -441,7 +442,7 @@
     </div>
 </div>
 <div id="CM5Tab" class="container">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('ctabdomen')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -454,7 +455,7 @@
     </div>
 </div>
 <div id="CM6Tab" class="container">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('mriabdomen')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -467,7 +468,7 @@
     </div>
 </div>
 <div id="CM7Tab" class="container">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('ctmripelvis')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -480,7 +481,7 @@
     </div>
 </div>
 <div id="I1Tab" class="container">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('intvascular')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -493,7 +494,7 @@
     </div>
 </div>
 <div id="I2Tab" class="container">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('intbiopsy_drainage')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -506,7 +507,7 @@
     </div>
 </div>
 <div id="I3Tab" class="container">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('intmiscellaneous')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -519,7 +520,7 @@
     </div>
 </div>
 <div id="B1Tab" class="container" style="display:none">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('breast_mammography')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -532,7 +533,7 @@
     </div>
 </div>
 <div id="B2Tab" class="container">
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('breast_ultra_misc')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -545,7 +546,7 @@
     </div>
 </div>
 <div id="PA1tab" class="container" >
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('paediatric_gast')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -558,7 +559,7 @@
     </div>
 </div>
 <div id="PA2tab" class="container" >
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('paediatric_urolo')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -571,7 +572,7 @@
     </div>
 </div>
 <div id="PA3tab" class="container" >
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('paediatric_ultrasound')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -584,7 +585,7 @@
     </div>
 </div>
 <div id="PA4tab" class="container" >
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('paediatric_ct')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -597,7 +598,7 @@
     </div>
 </div>
 <div id="PA5tab" class="container" >
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('paediatric_mri')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -610,7 +611,7 @@
     </div>
 </div>
 <div id="PA6tab" class="container" >
-    <button id="model-show" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+<button  onclick="My_module('paediatric_plain_film')" class="btn btn-info" style="margin:10px 0px 10px 0px">Add New</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -623,8 +624,8 @@
     </div>
 </div>
 <script>
-    My_module=(table_name,modulname)=>{
-        let url ="php/moudles.php?Table="+table_name+"&&module="+modulname;
+    My_module=(table_name)=>{
+        let url ="php/moudles.php?Table="+table_name;
         $("#datamodel").load(url,()=>{
             $("#exampleModal").modal("show");
         })

@@ -1,5 +1,4 @@
 <script src="js/bootstrap.bundle.min.js"></script>
-
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -11,26 +10,33 @@
             </div>
             <div class="modal-body">
                 <form action="php/insert.php" method="post" method="post">
+                    <input hidden name="TableName" value="<?php echo $_GET["Table"];  ?>" />
                     <?php
-
                     include 'conn.php';
-                    $query = "SELECT * from training_posts_held Limit 1";
+                    $query = "SELECT * from " . $_GET["Table"] . " Limit 1";
                     $result = mysqli_query($conn, $query);
                     while ($row = mysqli_fetch_assoc($result)) {
                         foreach ($row as $k => $v) {
-                            if($k == "id"){
-
-                            }else{
-
-                          
-
+                            if ($k == "id") {
+                            } else if ($k == "Date" || $k == "date" || $k=="Finish_Date" ) {
                     ?>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1"><?= $k ?></label>
-                                <input type="text" class="form-control" name="<?= $k ?>">
-                            </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1"><?= $k ?></label>
+                                    <input type="date" class="form-control" name="<?= $k ?>">
+                                </div>
+                            <?php
+
+                            } else {
+                            ?>
+                                <?php
+
+                                ?>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1"><?= $k ?></label>
+                                    <input type="text" class="form-control" name="<?= $k ?>">
+                                </div>
                     <?php
-                      }
+                            }
                         }
                     }
                     ?>
