@@ -1,5 +1,5 @@
 <div id="t1tab" class="container">
-    <button id="model-show" onclick="My_module('training_posts_held','')" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
+    <button  onclick="My_module('training_posts_held','')" class="btn btn-info" style="margin:10px 0px 10px 0px">Training Posts Held</button>
     <div class="row">
         <div class="col-lg-12">
             <table id="" class="table table-striped table-bordered" style="width:100%;">
@@ -624,13 +624,9 @@
 </div>
 <script>
     My_module=(table_name,modulname)=>{
-        $.ajax({
-            method:"POST",
-            url:"../php/moudles.php",
-            data:{tabel:table_name,moduln:modulname},
-            success:()=>{
-                
-            }
+        let url ="php/moudles.php?Table="+table_name+"&&module="+modulname;
+        $("#datamodel").load(url,()=>{
+            $("#exampleModal").modal("show");
         })
     }
 
