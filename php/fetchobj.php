@@ -8,15 +8,14 @@
         $this->con = $conn;
     }
     public function table($Name){
-        $sql="select * from $Name limit 1";
+        $sql="SHOW COLUMNS FROM ".$Name."";
         $result=mysqli_query($this->con,$sql);
         echo " <thead class=thead-dark>";
         echo "<tr>";
             while($row=$result->fetch_assoc()){
-                foreach($row as $key=> $value){
-                echo "<th scope=col>$key</th>";
+                echo "<th scope=col>". $row["Field"]."</th>";
                 }
-            }
+            
         echo "</tr>
             </thead>";
 
